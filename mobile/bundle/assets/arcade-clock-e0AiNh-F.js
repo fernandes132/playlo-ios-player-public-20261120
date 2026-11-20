@@ -1,0 +1,1 @@
+function e(e,t,n){return typeof e==`number`&&Number.isFinite(e)&&Number.isFinite(t)&&Number.isFinite(n)&&n>=t?(t+n)/2-e:0}function t(e,t){return e-(typeof t==`number`&&Number.isFinite(t)?t:0)}export{t as n,e as t};

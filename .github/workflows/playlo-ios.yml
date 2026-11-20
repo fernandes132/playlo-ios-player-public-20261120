@@ -1,0 +1,41 @@
+name: Build Playlo iOS IPA
+on:
+ workflow_dispatch:
+  inputs:
+   runner:
+    description: Standard macOS runner (alternate pool when a queue stalls)
+    type: choice
+    default: macos-26
+    options: [macos-26, macos-15]
+permissions: { contents: write }
+jobs:
+ build:
+  runs-on: ${{ inputs.runner || 'macos-26' }}
+  timeout-minutes: 20
+  steps:
+   - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
+     with:
+      persist-credentials: false
+      sparse-checkout: mobile
+   - name: Select current Xcode toolchain
+     run: |
+      XCODE=$(python3 -c 'import glob,re;items=[(tuple(map(int,re.findall(r"[0-9]+",p))),p) for p in glob.glob("/Applications/Xcode_*.app")];items=[x for x in items if x[0] and x[0][0]>=26];assert items,"Xcode 26 or newer is required for the current WebKit simulator";print(max(items)[1]+"/Contents/Developer")')
+      echo "DEVELOPER_DIR=$XCODE" >> "$GITHUB_ENV"
+   - name: Record cloud build environment
+     run: |
+      sw_vers
+      xcodebuild -version
+   - name: Build real arm64 iOS app and package unsigned IPA
+     run: |
+      python3 mobile/ios/test_validate_ipa.py
+      bash mobile/ios/build-ipa.sh
+   - name: Test embedded games in real WKWebView on iPhone simulator
+     run: bash mobile/ios/test-simulator.sh
+   - name: Keep the unsigned build in an owner-only draft release
+     env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+     run: |
+      TAG="native-v1.15.0-${GITHUB_RUN_ID}"
+      gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --draft --title "Playlo 1.15.0 native iPhone build" --notes "Unsigned IPA for iLoader. No website deployment."
+      gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" mobile/ios/.build/Playlo-unsigned.ipa mobile/ios/.build/Playlo-unsigned.ipa.validation.json mobile/ios/.build/Playlo-embedded-bundle.json mobile/ios/.build/Playlo-native-smoke.json mobile/ios/.build/Playlo-native-youtube.json mobile/ios/.build/Playlo-native-youtube.png
+

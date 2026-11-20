@@ -1,0 +1,947 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 1101,
+    "sha256": "f73ba7e22c54e20158b6aad899146831f841bcf0771b4224d6c01c47366c3c52"
+  },
+  {
+    "path": "review-files.json",
+    "bytes": 32351,
+    "sha256": "2e3f69155e5403b7e9ff407ced3a1f7a85ba37f964aa1a0751458b29d5a844ca"
+  },
+  {
+    "path": "mobile/prepare_shared.py",
+    "bytes": 2207,
+    "sha256": "c88642fce80b85e32cd7133d71a98746f12727cde6a8480c84983a7981c3a208"
+  },
+  {
+    "path": "mobile/verify_bundle.py",
+    "bytes": 2219,
+    "sha256": "6299f231c50d1e7abb67eb1692f6445692095be71299d8f6a180a93b5f77bc6b"
+  },
+  {
+    "path": ".github/workflows/playlo-ios.yml",
+    "bytes": 1925,
+    "sha256": "ffbddd772121fef15db0e5344397aac6da257ace30047d259823c1dc5289c111"
+  },
+  {
+    "path": "mobile/bundle/app-online.json",
+    "bytes": 172,
+    "sha256": "17087d200cff957ffded0e23930e916361bcfe7cd7238dc2a902a06ce98c59d4"
+  },
+  {
+    "path": "mobile/bundle/bundle-manifest.json",
+    "bytes": 28466,
+    "sha256": "9d90c47cdbc7cf168ee0c91b950a62856d3708c25fd6fadc1d7a5e6efa13995a"
+  },
+  {
+    "path": "mobile/bundle/favicon.svg",
+    "bytes": 718,
+    "sha256": "3e8863288c2d43dd33d2a71de317dcf9198f09932ea8d61e0def1b846a865435"
+  },
+  {
+    "path": "mobile/bundle/file.svg",
+    "bytes": 391,
+    "sha256": "2b67812c325c199a02536cdbeea0c593a72f707d323b72ee3e08dbab06753bd4"
+  },
+  {
+    "path": "mobile/bundle/globe.svg",
+    "bytes": 1035,
+    "sha256": "b614b9bf183925957661ac851498fe1d8029fd43a62fbfed86f9e2624a57e7cf"
+  },
+  {
+    "path": "mobile/bundle/index.html",
+    "bytes": 961,
+    "sha256": "2f08e7c36fba31cb4087a0358d8c0e383aabf2a430733e8bdda18956cd55bd31"
+  },
+  {
+    "path": "mobile/bundle/manifest.webmanifest",
+    "bytes": 666,
+    "sha256": "6c32598d863d5edd1ba58989fcaae99532bf185690e4aee224c09d7ef64dc1b6"
+  },
+  {
+    "path": "mobile/bundle/og-playlo-games.png",
+    "bytes": 1968977,
+    "sha256": "7b4bded8358841f8418f40cdcff11106bf4d099abba1454dcd86fb918d2142ce"
+  },
+  {
+    "path": "mobile/bundle/og-playlo-studio.png",
+    "bytes": 2128621,
+    "sha256": "b5f6a3c28fe093b34d1b6f22d764fd5a512cd76e45d509d7141d2c49a159877e"
+  },
+  {
+    "path": "mobile/bundle/og-playlo.png",
+    "bytes": 1861103,
+    "sha256": "939053bd7161e053fb2d8d564b0b7a8baf2d4f7a2f1b2ee62609681ba20cd356"
+  },
+  {
+    "path": "mobile/bundle/og.png",
+    "bytes": 1820526,
+    "sha256": "089c7578eb417a13fcc4e2b6c207739380f841756c5f11d5405e5977bca706e8"
+  },
+  {
+    "path": "mobile/bundle/playlo-sdk-v1.js",
+    "bytes": 3709,
+    "sha256": "9860cb1cea81ddee9b3a6aee2099c3e84e3cd74310ee5dae2f6d1fceb17c9a8e"
+  },
+  {
+    "path": "mobile/bundle/playlo-sdk-voorbeeld-v1.zip",
+    "bytes": 2111,
+    "sha256": "29b7d84c53f259192d92c56f4a2e97031ac4fad39d9f3a59f723ae9b397f04f1"
+  },
+  {
+    "path": "mobile/bundle/robots.txt",
+    "bytes": 139,
+    "sha256": "fe13623b3782ee7d6c438a7ba2455d5a6ace506af949f843e121e9af0e84a5e6"
+  },
+  {
+    "path": "mobile/bundle/sitemap.xml",
+    "bytes": 3623,
+    "sha256": "0a1a6df7adf9045b7afdf327e7b4f3b5448ecad0f4c6009564e2270b8ca33b80"
+  },
+  {
+    "path": "mobile/bundle/sql-wasm.wasm",
+    "bytes": 685235,
+    "sha256": "0dfeecda2070b36da0cd4f6afa250af9453de528a983770f85b13d5d6b667572"
+  },
+  {
+    "path": "mobile/bundle/window.svg",
+    "bytes": 385,
+    "sha256": "644768c4aaeb4767bce293344eeb0c125fb804a94d801440424072202d85e3a1"
+  },
+  {
+    "path": "mobile/ios/build-ipa.sh",
+    "bytes": 1091,
+    "sha256": "0a97f7b881df5eb1e615df3588749b737e69a1a2131ad6f14d6c9c1b9aa1dcce"
+  },
+  {
+    "path": "mobile/ios/test-simulator.sh",
+    "bytes": 3335,
+    "sha256": "94dcece81935e91f5981bfe26a6049caf94d7b66758814a24d76f2910feaab54"
+  },
+  {
+    "path": "mobile/ios/test_validate_ipa.py",
+    "bytes": 2102,
+    "sha256": "6c17393a14d8a614d71dd07208a61e813da89a72492c433d5af417cd82c09713"
+  },
+  {
+    "path": "mobile/ios/validate-ipa.py",
+    "bytes": 2986,
+    "sha256": "dfdcdb5aeec0afaf3bfaf621e2635fc21b417c3a37dfd70c8b9d4eedbffbaed8"
+  },
+  {
+    "path": "mobile/shared/app-online.json",
+    "bytes": 172,
+    "sha256": "17087d200cff957ffded0e23930e916361bcfe7cd7238dc2a902a06ce98c59d4"
+  },
+  {
+    "path": "mobile/shared/app-shell.json",
+    "bytes": 660,
+    "sha256": "65a3cd2c6854a3b47caa781b340c464c80fbd64bb816ddd04d008aecd4f185d0"
+  },
+  {
+    "path": "mobile/shared/game-screen.css",
+    "bytes": 30608,
+    "sha256": "3a48709792f85010ee538fde404b3008619fa9f94a533633b853635d43617bd3"
+  },
+  {
+    "path": "mobile/shared/shell.js",
+    "bytes": 7543,
+    "sha256": "14ebef1f89e618df1ca3e0d64f7e761947e5ef296a38308a158676b8ce69f97a"
+  },
+  {
+    "path": "mobile/shared/youtube-player.html",
+    "bytes": 5187,
+    "sha256": "aa958946e069f52a218abf0cf00ddc77a1f271261d5d0dfdcce0fce077e6ed40"
+  },
+  {
+    "path": "mobile/bundle/app-icons/playlo-192.png",
+    "bytes": 4238,
+    "sha256": "cb8c1ba1818466f1e98c62ebc642c3a377e85a5b7aaabf967f09d7646a582eb7"
+  },
+  {
+    "path": "mobile/bundle/app-icons/playlo-512.png",
+    "bytes": 11549,
+    "sha256": "6f24a9388728d3d190b8aa3534fa1c85ec89edef59e20b61a230495bee9601a1"
+  },
+  {
+    "path": "mobile/bundle/assets/AccountCenter-BWKOmOjt.js",
+    "bytes": 3716,
+    "sha256": "97684566243a563a576cbf529937372a548fdfe787889400bf2377c3eeb97b46"
+  },
+  {
+    "path": "mobile/bundle/assets/ActionBoard-CC49JK2-.js",
+    "bytes": 90768,
+    "sha256": "ba8bb7c6ecb1fdb2b58ab01a4ba8fa0a558a6d27d2317c630e8b164219193548"
+  },
+  {
+    "path": "mobile/bundle/assets/ActionBoard-D22hMJFW.css",
+    "bytes": 15898,
+    "sha256": "29d98252689e41de2d18a4c6a56e9c204dbc9081ce0c561a514af9c2a38ecc2a"
+  },
+  {
+    "path": "mobile/bundle/assets/AdventureExperience-DMwzZFzY.css",
+    "bytes": 32910,
+    "sha256": "a51d0e541f8a3bd04ea18cda3af2031b845d8b9d03144e16d7ecd6d3457fb107"
+  },
+  {
+    "path": "mobile/bundle/assets/AdventureExperience-fZVQas_x.js",
+    "bytes": 4117,
+    "sha256": "e8b5eb49b6c5e77f310c616182a29c46e7d545731f2b70fd51bfcf764ab117e7"
+  },
+  {
+    "path": "mobile/bundle/assets/ar-Cj80XCiv.js",
+    "bytes": 329221,
+    "sha256": "e3635b2b3688c6b27c2ede9c9d3469ab3b7f7e0de244c8e4b603f414a75f629d"
+  },
+  {
+    "path": "mobile/bundle/assets/arcade-clock-e0AiNh-F.js",
+    "bytes": 214,
+    "sha256": "5c8201a646c7549618f6c6c8a7bc783362249ea95a534d44a18a7b5a2ec2858f"
+  },
+  {
+    "path": "mobile/bundle/assets/ArcadeGame-BIEmYf1K.css",
+    "bytes": 16461,
+    "sha256": "5f4ee6e664f8f135ce4513c05e7f8fa7f00c0761f690a4f2558d018772854b67"
+  },
+  {
+    "path": "mobile/bundle/assets/ArcadeGame-hUoS_O2N.js",
+    "bytes": 58169,
+    "sha256": "4ef85ca89677d4f503f249434569dfbf06b72db4dcaa3beac9b64223c55aca4e"
+  },
+  {
+    "path": "mobile/bundle/assets/BetForm-B5xY9wFx.js",
+    "bytes": 6452,
+    "sha256": "9ae1c1abda9391f4f13379f57177fecc149235a4ed59e3a1b72b7089821b99f1"
+  },
+  {
+    "path": "mobile/bundle/assets/BetForm-Y6XQ3cEJ.css",
+    "bytes": 3386,
+    "sha256": "ac66f642ab5d518fdee654b864ec589e2a842ecc56fc28edb91478cf9ce44046"
+  },
+  {
+    "path": "mobile/bundle/assets/BoardResults-DmLtf43b.js",
+    "bytes": 2765,
+    "sha256": "54c8d12201b2ec89569ad718c2732e6fc3101c2e99df2fc6b3297af5c1b5e7af"
+  },
+  {
+    "path": "mobile/bundle/assets/BoardResults-DsZ-XOT6.css",
+    "bytes": 2440,
+    "sha256": "b5f277a8736837a6218901c9e3bd8dad70810020455c2eddbcaa7ae242533cac"
+  },
+  {
+    "path": "mobile/bundle/assets/BoardTurnPanel-B0aYllaP.js",
+    "bytes": 4579,
+    "sha256": "3ec6e2392e42ad5eb13d229f030ec252f42291e958f3bbeec917d5f7598753e1"
+  },
+  {
+    "path": "mobile/bundle/assets/BoardTurnPanel-oZkFXzHc.css",
+    "bytes": 2523,
+    "sha256": "f0a51a14094b4ce509b78498e917447356e02176888c6ef70b8145511a56827f"
+  },
+  {
+    "path": "mobile/bundle/assets/BombPass-6FB1_ZW4.css",
+    "bytes": 6557,
+    "sha256": "eff82df975a3dce92f00b171c18f7b376bd78e5584b6bd29d79f864fed3caa1a"
+  },
+  {
+    "path": "mobile/bundle/assets/BombPass-DJKwpp3i.js",
+    "bytes": 49640,
+    "sha256": "4837e92de10052ec7c6ba3ab1df847cbc3f8a9fe605936a3bb42458a6b3cd93a"
+  },
+  {
+    "path": "mobile/bundle/assets/browser-DGiNpGHY.js",
+    "bytes": 23492,
+    "sha256": "5bf63c07abb1de1640af6e4f753efcbd323cedd32e1de970e93c5f47021e0578"
+  },
+  {
+    "path": "mobile/bundle/assets/browser-rGJpMN92.js",
+    "bytes": 8785,
+    "sha256": "4b7ecc8cc02a4f68fa9e473c6094d159355e6a20affd96c0d1031d3de33366fc"
+  },
+  {
+    "path": "mobile/bundle/assets/CampaignRewards-C6aD1_T4.js",
+    "bytes": 13498,
+    "sha256": "f8c85cf235d692694ad59b7868432d9a736fde47d08b613d0bc27d70adb7a786"
+  },
+  {
+    "path": "mobile/bundle/assets/catalog-fit-CVEA_XIe.css",
+    "bytes": 4404,
+    "sha256": "747c3769163429ddc50f58d0285b06f22c463577f5de25cd2e5938fd110f66f9"
+  },
+  {
+    "path": "mobile/bundle/assets/CreatorStudio-DIkQuC5N.js",
+    "bytes": 15805,
+    "sha256": "0d6bee591a7a583c7164c14d06dbb0f1429a9fef9ff1e47cc4105d16dd9d004e"
+  },
+  {
+    "path": "mobile/bundle/assets/de-BRDw6gyN.js",
+    "bytes": 286783,
+    "sha256": "4798e837a686384bb3d834812bb71a9453dfd4bae9716a10ba9f8a7c026cb703"
+  },
+  {
+    "path": "mobile/bundle/assets/DecisionTable-BjjLRoOn.css",
+    "bytes": 7423,
+    "sha256": "d02a091d8954701217f22dc7322cb8c6bcb8bb56c96b31d2728ba2d34e812400"
+  },
+  {
+    "path": "mobile/bundle/assets/DecisionTable-ChNzIoeZ.js",
+    "bytes": 7675,
+    "sha256": "1c643d3134d012cb1679254bb80a6899891fa04f2979bc4935335c04b4c5abc7"
+  },
+  {
+    "path": "mobile/bundle/assets/DifficultyPicker-CljFGaER.js",
+    "bytes": 708,
+    "sha256": "f17feee17aaf085765d3b468ad1750ef097f453d7eea4c5172419c1aa22df0a0"
+  },
+  {
+    "path": "mobile/bundle/assets/DrawingBoard-D2sW7qHa.js",
+    "bytes": 4496,
+    "sha256": "dbfa66ccc0f1bfeea65352ea3284a9c1b56f4c0bbc85ad7228f9f4d94d107b57"
+  },
+  {
+    "path": "mobile/bundle/assets/en-CpCPj2hW.js",
+    "bytes": 269787,
+    "sha256": "eca108cbeaf1d7b895df0baadac1b09d2af91dd4210ccd5f1f9913d7a562e003"
+  },
+  {
+    "path": "mobile/bundle/assets/es-LfK7kib5.js",
+    "bytes": 283944,
+    "sha256": "4c4f947d884bf289fe83141202f0178827ef885497a36e84af2582c2cffd7221"
+  },
+  {
+    "path": "mobile/bundle/assets/FeaturedAdventures-dHUoRT2L.js",
+    "bytes": 2264,
+    "sha256": "84509990be33724658ba0f15cb9584bbba59c6c4244bc4026a1ecc5755327dd9"
+  },
+  {
+    "path": "mobile/bundle/assets/fr-DlqpRgaK.js",
+    "bytes": 289705,
+    "sha256": "010b12b20bd63d5fb36f9170b8c92a0d1deef11642834282690e229b6d5036f2"
+  },
+  {
+    "path": "mobile/bundle/assets/FreezeCourse-ZPnTUZJ4.js",
+    "bytes": 7653,
+    "sha256": "68bd7077e708923091aaaadcbbf080d7141ad9746298fd8ac081ea6b248e1c44"
+  },
+  {
+    "path": "mobile/bundle/assets/game-api-client-2LX4m-0l.js",
+    "bytes": 1255,
+    "sha256": "d13f7ec19b6cbab0151c2dfdb355a239f8e593a199c3f0d8b278b79d8e80df64"
+  },
+  {
+    "path": "mobile/bundle/assets/GameCatalog-B7YJ15oQ.js",
+    "bytes": 7604,
+    "sha256": "4e2a5ca141f61be06a3e4612e90a36314c98b16fb64f61b6afbb34c4f3a42008"
+  },
+  {
+    "path": "mobile/bundle/assets/GameRuleBrief-BREdivEd.js",
+    "bytes": 511,
+    "sha256": "799445a78070fc31d049b1d25e9ad24af043bd849427015d5747af4cf354da0a"
+  },
+  {
+    "path": "mobile/bundle/assets/GameShare-8SjvV2-Y.js",
+    "bytes": 869,
+    "sha256": "27c280ebad59872b86d791e2778e117686040369de1bf81f7e877cdb04582f8d"
+  },
+  {
+    "path": "mobile/bundle/assets/group-reveal-B7nScOvg.css",
+    "bytes": 11512,
+    "sha256": "be0500513a1ac5b2e696c1bacb08060701fe9c71bbf2bc0b4bb406361379128f"
+  },
+  {
+    "path": "mobile/bundle/assets/GroupReveal-64-TlL7_.js",
+    "bytes": 10148,
+    "sha256": "c71a3318ba908ad906f836d9927a7cecff28201f2dbecd574ed549d1e8a431bb"
+  },
+  {
+    "path": "mobile/bundle/assets/guest-session-VkPtipT2.js",
+    "bytes": 590,
+    "sha256": "5a2e1921d3044e671a4c214e79ca6e234cee0f5815f088571bc82bffdfb148f9"
+  },
+  {
+    "path": "mobile/bundle/assets/HalloweenDash-mrJ-nWOh.js",
+    "bytes": 5774,
+    "sha256": "7e421d4e1f9f26abcdb3e6e65006e9bbcb0e9562c30a6b9a92f97a62ccfa32cd"
+  },
+  {
+    "path": "mobile/bundle/assets/HalloweenHub-D01maNGz.css",
+    "bytes": 18995,
+    "sha256": "4a36bed45f9693a21f2b3bfe8aa972a4b2a9ac3858eb0867723b4a1a644929db"
+  },
+  {
+    "path": "mobile/bundle/assets/HalloweenHub-YVUDxT_R.js",
+    "bytes": 34971,
+    "sha256": "baca09f0fa55add558176f4d63025911555eb2245735005b6361b0f1b444130d"
+  },
+  {
+    "path": "mobile/bundle/assets/HalloweenMonster-DYnpENw6.js",
+    "bytes": 24822,
+    "sha256": "639dc4529b40e41d30bdac16fcd513ace13a7f047646716720e1839ab6671115"
+  },
+  {
+    "path": "mobile/bundle/assets/index-BD452Uaw.js",
+    "bytes": 1293884,
+    "sha256": "5e0971955c19d7ca2f5cb4678d356dcaa2fcf507a955459ff7828d78d64b2dd2"
+  },
+  {
+    "path": "mobile/bundle/assets/index-DFX_sulx.css",
+    "bytes": 391972,
+    "sha256": "96377de05c4ae7760870d590f759d3d728e6a29b5ecfe26f8d0e2f29ee2c1a88"
+  },
+  {
+    "path": "mobile/bundle/assets/local-party-D6sSGUlQ.css",
+    "bytes": 8727,
+    "sha256": "dbcd119ad69748255662d9bac57ded30a3e359b864515b93cc1333709a1d27d9"
+  },
+  {
+    "path": "mobile/bundle/assets/local-party-D_ca-NgN.js",
+    "bytes": 670,
+    "sha256": "c6f232e3b62ec3580ccbcfd5cf1b6ef05a95c6ae0d6926edfea9c1e755b29c6a"
+  },
+  {
+    "path": "mobile/bundle/assets/local-roster-Cde2r0wT.js",
+    "bytes": 390,
+    "sha256": "e0a94f27ede2d2158bed17ae2fc59a2fdd1adc0009b718f132f4ee3bd7f144a5"
+  },
+  {
+    "path": "mobile/bundle/assets/LocalActionGames-C8H3xkGM.js",
+    "bytes": 16192,
+    "sha256": "b0b35f75fa73b81cf736f9dc30f03bb340aff22e82346c244ba705ff5ac15819"
+  },
+  {
+    "path": "mobile/bundle/assets/LocalActionGames-kFIJupWk.css",
+    "bytes": 2439,
+    "sha256": "7fc7f1fdc990e3493237556ad3465573910f4e58b5a939b4c65a76aa08d2157c"
+  },
+  {
+    "path": "mobile/bundle/assets/LocalDraw-CFrgbkup.js",
+    "bytes": 9346,
+    "sha256": "6c054cd34f3bedabcbcb93204a386f4525ab2771d830a72e76cb6bd951afab32"
+  },
+  {
+    "path": "mobile/bundle/assets/LocalFreeze-Boy_fDHY.js",
+    "bytes": 8483,
+    "sha256": "f329b5769e05dcdcbead9c156769bfd187149291bb87489f37d141c45926f6b3"
+  },
+  {
+    "path": "mobile/bundle/assets/LocalGroupGames-vwOv5C-v.js",
+    "bytes": 10364,
+    "sha256": "0fe99dbc6ccc745100735ef895532aee42c598a950d552118650dd651bcbc923"
+  },
+  {
+    "path": "mobile/bundle/assets/LocalMissions-mi8dGZQa.js",
+    "bytes": 10827,
+    "sha256": "c53fce8474f18940ffce89ec0a55d117adc8bd71c8a055ba557692cd9f9b67bb"
+  },
+  {
+    "path": "mobile/bundle/assets/LocalRapid-BG779Z0P.js",
+    "bytes": 14526,
+    "sha256": "3d190d8767a6e964149cbae63280297a99ee10b2c13f8268b13ca819190ec353"
+  },
+  {
+    "path": "mobile/bundle/assets/LocalTrap-Dxq3Pomm.js",
+    "bytes": 10286,
+    "sha256": "fce9844feed5f8a1105d53ea6b2249c4ded5bf3e6926165007582fc3e0e3ac46"
+  },
+  {
+    "path": "mobile/bundle/assets/mafia-oz-7JGrl.css",
+    "bytes": 13450,
+    "sha256": "d7135270ba47583b77129d44442bcb2a98b6b95469b02c1e9b517a2a013eb399"
+  },
+  {
+    "path": "mobile/bundle/assets/mafia-uyjBjDXW.js",
+    "bytes": 2118,
+    "sha256": "470505040642bf07e8a7a3bf36c55fdcb336c8b31e036268e89c2d75db5219a0"
+  },
+  {
+    "path": "mobile/bundle/assets/MafiaGame-Dcj2ofWJ.js",
+    "bytes": 39332,
+    "sha256": "c988d9443d93cb0bff74206ae7d7f341736b4cfa6d1c02c0b69d27a2ba0a5010"
+  },
+  {
+    "path": "mobile/bundle/assets/MafiaModes-Bts61CYC.js",
+    "bytes": 2489,
+    "sha256": "d8f73b975469f47f0ad206aeed157a412423018527c23e67eab2fe01bd72fc3d"
+  },
+  {
+    "path": "mobile/bundle/assets/MafiaPrimer-B4rogmx6.js",
+    "bytes": 1630,
+    "sha256": "4eb643c503d7f1a5b568ebf74ad9e901ab99e3b1882e01a03039ab77d4ace785"
+  },
+  {
+    "path": "mobile/bundle/assets/MafiaPrimer-oY705rcD.css",
+    "bytes": 2345,
+    "sha256": "51dfbc93b3b971b9c52e6376c1e365f97d9d28bf5b8a52de04474547422fcb00"
+  },
+  {
+    "path": "mobile/bundle/assets/MakerCodeStudio-DD2P4y3n.css",
+    "bytes": 10280,
+    "sha256": "81c7f1de7e2d9e8c1f99dc14e12bd80fe7d79740c7277842b7ea3e1a2a7d3e74"
+  },
+  {
+    "path": "mobile/bundle/assets/MakerCodeStudio-sSXuaBae.js",
+    "bytes": 59656,
+    "sha256": "4047f9aac601f5103288bae9a19f41ce1174bc594e55968c9c3f5d729080c43e"
+  },
+  {
+    "path": "mobile/bundle/assets/NetworkDecisionTable-BeEEx9JA.js",
+    "bytes": 762,
+    "sha256": "5c039b2dc13a708644c185473e4921a1ad884b532b98bc8b46a42e16432724b5"
+  },
+  {
+    "path": "mobile/bundle/assets/OnlineArcade-OUt79whv.js",
+    "bytes": 34213,
+    "sha256": "dac4aa281ea262b44ba8840b05efcc546d73358239173e7cf209af0567911770"
+  },
+  {
+    "path": "mobile/bundle/assets/PartyStageArt-0vZovvXR.css",
+    "bytes": 1129,
+    "sha256": "4a163122af2e3e1168a76fb6048711869311ff042664fa29dcf50bab8efd8b15"
+  },
+  {
+    "path": "mobile/bundle/assets/PartyStageArt-Cv3wVTC7.js",
+    "bytes": 4943,
+    "sha256": "1bd9a6182fdd6cfb33ec90d0f350f3d68a9157888add4a5ac517b78cb07d5ef7"
+  },
+  {
+    "path": "mobile/bundle/assets/PartyWritingDesk-C3msF2fm.js",
+    "bytes": 9519,
+    "sha256": "c3ccdada6013178a9f88273bc9064d4ae8d027805f352ed3ba52c6fbc2e837de"
+  },
+  {
+    "path": "mobile/bundle/assets/PartyWritingDesk-DFY-Doq1.css",
+    "bytes": 11517,
+    "sha256": "129aac2aa823257bad5fbdc84466de01624f82e04a52b10e0902464ce4d9f0a9"
+  },
+  {
+    "path": "mobile/bundle/assets/PlayfieldStatus-Civ93q9M.js",
+    "bytes": 3219,
+    "sha256": "21e057030acc32f4429576635e45fa0918124afcf896e966f03e6ad9ebaef7f9"
+  },
+  {
+    "path": "mobile/bundle/assets/PlayfieldStatus-DXI2DTP_.css",
+    "bytes": 759,
+    "sha256": "8f0aebf192f779e1878fd90725b157ffa6b92de80f2edd9158103c7b51b2a307"
+  },
+  {
+    "path": "mobile/bundle/assets/PrivateScreen-Bad0ZQ1T.js",
+    "bytes": 827,
+    "sha256": "1558301ce2279da7a2eb0d46a06cf90ac1cab7f29cb3704701b48de7ef39d5a4"
+  },
+  {
+    "path": "mobile/bundle/assets/PrivateScreen-Dn2J8tvS.css",
+    "bytes": 616,
+    "sha256": "10b45b68097894855946144f57f1a56f12e19785af1dc4b10a825172b03bbf95"
+  },
+  {
+    "path": "mobile/bundle/assets/pt-DjShi35J.js",
+    "bytes": 280855,
+    "sha256": "e1dcc96fb1d607cb3e94c68894d347f30d24d7fc3033dbbe92104af526710c05"
+  },
+  {
+    "path": "mobile/bundle/assets/PublishedGameStrip-rK3RnFE5.js",
+    "bytes": 1522,
+    "sha256": "d66433b042f8e75907f2953db316c81ef4033a4f842b70274613f5af39127463"
+  },
+  {
+    "path": "mobile/bundle/assets/PumpkinEndless-aJ3n419o.js",
+    "bytes": 22052,
+    "sha256": "5a9a86d19c9e08a97e6e79a3dc8041e494e6731dccb00b4d40c77906a0b2c971"
+  },
+  {
+    "path": "mobile/bundle/assets/PumpkinEndless-CF867YXC.css",
+    "bytes": 7996,
+    "sha256": "12bf6e278b35f4aa4054131b3a5cb95b3c785ef62fdc4956f1768851094b0ddf"
+  },
+  {
+    "path": "mobile/bundle/assets/ReactionDial-BImrgb1E.js",
+    "bytes": 1679,
+    "sha256": "934eeb178199a12b1ab3abb1abc9b7d9c8e05adacef7e7e1c9201d684b8211aa"
+  },
+  {
+    "path": "mobile/bundle/assets/SharedBoardSetup-BhPqBhsI.js",
+    "bytes": 2704,
+    "sha256": "1bbc31a38074c2dbdd4c943f170cf99a271748be649fd532b008bc8d8c3e7abd"
+  },
+  {
+    "path": "mobile/bundle/assets/SharedMafia-mg8EgTJb.js",
+    "bytes": 11947,
+    "sha256": "726eafb34ee5ed7def77c1a17cc0c0dc58b03a15b74cd5bdeb39782cff19046d"
+  },
+  {
+    "path": "mobile/bundle/assets/social-variants-CxbR0rnb.js",
+    "bytes": 3238,
+    "sha256": "d1b9bac177042a4fb0324ebb89bb6a7f75066c79947ac85c437725b64f541049"
+  },
+  {
+    "path": "mobile/bundle/assets/SocialHub-CPe32HD-.js",
+    "bytes": 9603,
+    "sha256": "0dbb1ec0366e0971e7b987d1f670cbba5229e675c4e8e5b6a6414c9cdf68696e"
+  },
+  {
+    "path": "mobile/bundle/assets/SocialResult-Cckqf67s.js",
+    "bytes": 6981,
+    "sha256": "bb691ee7275abed43e1639a14a3b3ef2e6ced8b05edda6a3a4d5b3044fcaa928"
+  },
+  {
+    "path": "mobile/bundle/assets/SocialResult-Dong4m4B.css",
+    "bytes": 3581,
+    "sha256": "26115e62e0b984116d3e4e736a2dfe4eec68716dfb61dd819bda652b5d5558b8"
+  },
+  {
+    "path": "mobile/bundle/assets/SpookyScene-3yhO_M5Q.js",
+    "bytes": 3941,
+    "sha256": "3dddb5b5f8a07234211dfafb7e0bf41bbdec3c450b90524a268f1d8c920e8aa8"
+  },
+  {
+    "path": "mobile/bundle/assets/three.module-C28biTZ8.js",
+    "bytes": 573428,
+    "sha256": "3773ddbfe71952c0d12badd0db3e68cc8fe91861debaaf35da4553cefe855b36"
+  },
+  {
+    "path": "mobile/bundle/assets/TrafficRun-BCGOwLdY.css",
+    "bytes": 2769,
+    "sha256": "f8fedf4a27bb7be98293c3139df6fa64dd9452dec533007ae7df64e2ef5fb65f"
+  },
+  {
+    "path": "mobile/bundle/assets/TrafficRun-COaDGl-M.js",
+    "bytes": 10740,
+    "sha256": "913ca3c8d5cbfb044e38d902c78bb28e6645513604e24f4796f08c6a8f029ffb"
+  },
+  {
+    "path": "mobile/bundle/assets/TrapBoard-HXn0ypsz.js",
+    "bytes": 1615,
+    "sha256": "0a7b920daa2313b88a4f6471e245a2001ea55e363ccd2a7acffb18341ec63137"
+  },
+  {
+    "path": "mobile/bundle/assets/TrickDeduction-VqD6yk55.js",
+    "bytes": 7539,
+    "sha256": "0c9710b36452c0104a3b9f7e73b25fc59b34b37dbd7a6f537dfc641597ab3328"
+  },
+  {
+    "path": "mobile/bundle/assets/TrickPortal-Eit9J6nJ.js",
+    "bytes": 20210,
+    "sha256": "23d6f5c8510774d7541c0c49e667c53b18e32e30015292f326f6494c7f50c9ca"
+  },
+  {
+    "path": "mobile/bundle/assets/TripleAnswerInput-DeBGsHIw.js",
+    "bytes": 744,
+    "sha256": "833cd75bc70704d694e53d812eafe0820fb349e38a9377e1a1757a2c6f362aad"
+  },
+  {
+    "path": "mobile/bundle/assets/WinterRoute-CHt_ustH.js",
+    "bytes": 36735,
+    "sha256": "d316159ccf86ac3f7b621b5c2ef1a076433278136f6561aa9dda3da3718ca212"
+  },
+  {
+    "path": "mobile/bundle/assets/zh-BBBtgyu0.js",
+    "bytes": 265378,
+    "sha256": "3e7d56909c0f37f461a73b2205e4fbd0879e19fb82915031ddf28d5ce3d7ded2"
+  },
+  {
+    "path": "mobile/bundle/games/adventure-escape-v80.webp",
+    "bytes": 366654,
+    "sha256": "227137f7aa0c6f027ac96f48aaad516add37d332641d9aeafc9dc0b9083fc8bc"
+  },
+  {
+    "path": "mobile/bundle/games/adventure-monster-v80.webp",
+    "bytes": 254832,
+    "sha256": "e94f0cbd2f362549877cfc94b1ae7700522a9465427bbaadf9a233e0e5da8697"
+  },
+  {
+    "path": "mobile/bundle/games/adventure-survival-v80.webp",
+    "bytes": 407354,
+    "sha256": "d0c0e47cca88368033ce7acf4bea93eee185a48b2018bb506a6af86e6981f89e"
+  },
+  {
+    "path": "mobile/bundle/games/adventure-trick-v80.webp",
+    "bytes": 467250,
+    "sha256": "f1e49caa9c149cfc1d52239e6dfeca41f2aec8be14788518bc5f92586349783e"
+  },
+  {
+    "path": "mobile/bundle/games/crown-palace-v73.webp",
+    "bytes": 225634,
+    "sha256": "5a873588cd8907329ca57d748ae8e302de8f8a127016749c217466f2392f747f"
+  },
+  {
+    "path": "mobile/bundle/games/delivery-disaster-3d-v133.png",
+    "bytes": 46672,
+    "sha256": "90deab0224d30ead212a21eef645adf4b524155ac3b35086e7e5b5098cba151a"
+  },
+  {
+    "path": "mobile/bundle/games/escape-room-0-v120.webp",
+    "bytes": 191778,
+    "sha256": "f92c06230ce6c90cea42b10142dc1f50506e5ca6ffd72ac24fca2c6400160b4d"
+  },
+  {
+    "path": "mobile/bundle/games/escape-room-1-v120.webp",
+    "bytes": 249302,
+    "sha256": "bffe692cb4e1ab1327fdc77319190d164e2468bd72f2f9e2424afd3095b9997c"
+  },
+  {
+    "path": "mobile/bundle/games/escape-room-2-v120.webp",
+    "bytes": 187656,
+    "sha256": "aac1f5634eb92445e52ae9a42e5e21157b9c4f817b72350bb70980c34c63ff38"
+  },
+  {
+    "path": "mobile/bundle/games/escape-room-3-v120.webp",
+    "bytes": 188156,
+    "sha256": "b4c54e67f72ba9ada25af7abf0101a05f6d2a387ef0a718e111bc41bedc81117"
+  },
+  {
+    "path": "mobile/bundle/games/escape-room-4-v120.webp",
+    "bytes": 191134,
+    "sha256": "2d6aaef099561bd8478115eedd95549b60445ade357736939b5edcd089cb6951"
+  },
+  {
+    "path": "mobile/bundle/games/escape-room-5-v120.webp",
+    "bytes": 225484,
+    "sha256": "2b24772cbba2cbb23383e25685c3361c2195dfd78b2a08d70c3df81651d72a15"
+  },
+  {
+    "path": "mobile/bundle/games/falling-moon-v73.webp",
+    "bytes": 469308,
+    "sha256": "0f8b31a644f394610af7a84ba07d58b42de6d9d294d6cdd12415b3bd4124f7ca"
+  },
+  {
+    "path": "mobile/bundle/games/grab-and-run-3d-v133.png",
+    "bytes": 47426,
+    "sha256": "025fad953ccd5d3dfb84fb25e3a16cbcd0ff783ea45dd6b1650aeac52c72d6d8"
+  },
+  {
+    "path": "mobile/bundle/games/king-of-the-hill-3d-v133.png",
+    "bytes": 70042,
+    "sha256": "87d3d995f421ae8a0ae38c40cddd99570976faefe143fcd53b7cb6fe207e5cbe"
+  },
+  {
+    "path": "mobile/bundle/games/laser-lab-v73.webp",
+    "bytes": 247654,
+    "sha256": "5438afc874ebbb9c68f6ba6d5fc011ae89d04757345db16cd8a91d7ed9738b8e"
+  },
+  {
+    "path": "mobile/bundle/games/lava-cavern-v72.png",
+    "bytes": 2909414,
+    "sha256": "afc04c0791982b4a47421d18b04fcf5a799dfd09b3ec090b98273c4ba2064f52"
+  },
+  {
+    "path": "mobile/bundle/games/lava-cavern-v74.webp",
+    "bytes": 456460,
+    "sha256": "d598e14d4d4809201d41c1d0e516471fc87428e5d87e5b5a9f73857d85ebce2e"
+  },
+  {
+    "path": "mobile/bundle/games/lava-sprites-v72.png",
+    "bytes": 2233936,
+    "sha256": "78cdb11e493c16232a7184ca21559f5ef58bb09d59956706b9542d92d3fa45ac"
+  },
+  {
+    "path": "mobile/bundle/games/lava-sprites-v74.webp",
+    "bytes": 303618,
+    "sha256": "158ea374989c5940dea707cf592f297a36678efed823dd5229710fa69396a2c7"
+  },
+  {
+    "path": "mobile/bundle/games/meme-scenes-v107.webp",
+    "bytes": 254724,
+    "sha256": "88f037fefcd74ee09cf5a4cdd145e874669925e8fe6ceaf32e083639b9c7fead"
+  },
+  {
+    "path": "mobile/bundle/games/pumpkin-forest-v72.png",
+    "bytes": 2849319,
+    "sha256": "c04e4fcd1a1e8b81f63d469ad41b518cea50e46afcf34e6efc65a8f403827fbf"
+  },
+  {
+    "path": "mobile/bundle/games/pumpkin-forest-v74.webp",
+    "bytes": 424026,
+    "sha256": "768f6554333b62f4567259f824d920c7df77045cb5e18ac61e05f2ba469d041e"
+  },
+  {
+    "path": "mobile/bundle/games/pumpkin-runner-v115b.webp",
+    "bytes": 256778,
+    "sha256": "c6de8535f16baa28fb58bea2b45f8b1a019e9033c66d41a6e2914967e8a96ebe"
+  },
+  {
+    "path": "mobile/bundle/games/pumpkin-sprites-v72.png",
+    "bytes": 2266805,
+    "sha256": "bd3d20c8fdbbe4d9351d94a397c0df68f7ea8b824d7146d56040e6b4e6cc5a49"
+  },
+  {
+    "path": "mobile/bundle/games/pumpkin-sprites-v74.webp",
+    "bytes": 323944,
+    "sha256": "69c42ccc82ac269e1b970ffefd6118904b767aefd434c7a3154068315a7f98e1"
+  },
+  {
+    "path": "mobile/bundle/games/rendier-express-3d-v132.png",
+    "bytes": 107400,
+    "sha256": "e475dda63c151012eba6d26e8126ff3386666baaa692ea5aef2220a1ca33bb1d"
+  },
+  {
+    "path": "mobile/bundle/games/rendier-express-3d-v133.png",
+    "bytes": 124117,
+    "sha256": "3d27a449aada1a52251b7a5cdfb827c25d5ceb9d31c58e933cf4aa0bebad2e9b"
+  },
+  {
+    "path": "mobile/bundle/games/schoorsteen-sprint-3d-v132.png",
+    "bytes": 97674,
+    "sha256": "411a2f7b5b95fc968a10738a9326257193a8cd80910aa9a25a6a5d9e127c75ad"
+  },
+  {
+    "path": "mobile/bundle/games/schoorsteen-sprint-3d-v133.png",
+    "bytes": 110605,
+    "sha256": "2619912878693632cd2ffb73ec38fb587ce8c49365915f21ce459f556493611a"
+  },
+  {
+    "path": "mobile/bundle/games/survival-room-route-0-v94.webp",
+    "bytes": 282626,
+    "sha256": "5d523002eb10a3ba7065fd6798d6e4728940048fddf681d4a3a7c4fd30228d0d"
+  },
+  {
+    "path": "mobile/bundle/games/survival-room-route-1-v94.webp",
+    "bytes": 314588,
+    "sha256": "2127042789420c1cd6a664eefb3b75af4f877b46c4ee276f2dec857b4971abb0"
+  },
+  {
+    "path": "mobile/bundle/games/survival-room-route-2-v94.webp",
+    "bytes": 316676,
+    "sha256": "5e0b966801b5124d3ccf3f1dea913a2212293f3e695cd49ffc67bf7aa43ed570"
+  },
+  {
+    "path": "mobile/bundle/games/survival-story-props-v94b.webp",
+    "bytes": 464240,
+    "sha256": "78a9303febb5df7c7ef6bb3a8abcc9567e191d36f47a7d232aff8869ca989935"
+  },
+  {
+    "path": "mobile/bundle/games/traffic-city-v73.webp",
+    "bytes": 260048,
+    "sha256": "c63c73106a34648e0e504a62efa92118c5c044842edae2a73a000f8e6064a213"
+  },
+  {
+    "path": "mobile/bundle/games/traffic-panic-3d-v133.png",
+    "bytes": 62113,
+    "sha256": "c1c38f914ac89bc9e08c38d4ff37f61dd879ae66cba99010c80aaa57315be238"
+  },
+  {
+    "path": "mobile/bundle/games/world-sprites-v73.webp",
+    "bytes": 289678,
+    "sha256": "cb4fabb38eaece5c83593c39011702cfda90baba97e0f8701054b01e960627a8"
+  },
+  {
+    "path": "mobile/bundle/licenses/three-MIT.txt",
+    "bytes": 1102,
+    "sha256": "5d5dad8147523d59bc15cca838ae0bdaae7075230ec49132c551a1d18e7b3412"
+  },
+  {
+    "path": "mobile/bundle/mafia/og-mafia.png",
+    "bytes": 27411,
+    "sha256": "97d2020a510d2c98802e7de2929eec02329f4bb53a22fb5c0083eb65ae75e00f"
+  },
+  {
+    "path": "mobile/bundle/music-audio/usuan1100187.mp3",
+    "bytes": 4186274,
+    "sha256": "cb029b223a6e42c60714263616a1400f1a81141e298c29c7b20895030cba843b"
+  },
+  {
+    "path": "mobile/bundle/music-audio/usuan1100644.mp3",
+    "bytes": 2940260,
+    "sha256": "8514529e33cc05ee25a1ccddbe83cea8afea91e8b8e1261eaa4b85438bf6475e"
+  },
+  {
+    "path": "mobile/bundle/music-audio/usuan1100768.mp3",
+    "bytes": 2696840,
+    "sha256": "cb23b1833c35e391de10d998d6a40cfc760565ce31d23014c86025523ca8239b"
+  },
+  {
+    "path": "mobile/bundle/music-audio/usuan1100772.mp3",
+    "bytes": 5466943,
+    "sha256": "db1710333d68a215277f77e4e17e1a64bf4ed38f87c70f8d0f56b16b6aa4f884"
+  },
+  {
+    "path": "mobile/bundle/music-audio/usuan1100844.mp3",
+    "bytes": 9252699,
+    "sha256": "d3d0614535a61d748e2fd8d5117fc4d781022a7624794802a2462d8af3fdd522"
+  },
+  {
+    "path": "mobile/bundle/music-audio/usuan1400011.mp3",
+    "bytes": 5005207,
+    "sha256": "a5bb345c23849ad0786aa0bc5157a9f2d4039660fe00282e55754d475f36dc14"
+  },
+  {
+    "path": "mobile/bundle/music-audio/usuan1400037.mp3",
+    "bytes": 6566713,
+    "sha256": "8433b770a630d9b1594fd484442c677907ece899a4d149954cd2e74fd733e311"
+  },
+  {
+    "path": "mobile/bundle/mafia/avatars/bear.svg",
+    "bytes": 435,
+    "sha256": "133b9296d65bebb630a9b9d75435b1d5a6c68b4f0f1d13ab832262fe2d914f08"
+  },
+  {
+    "path": "mobile/bundle/mafia/avatars/cat.svg",
+    "bytes": 425,
+    "sha256": "12c3eb195dfe477e3c208039a5c096c0650322ecb8802ce588bec015dc3248f2"
+  },
+  {
+    "path": "mobile/bundle/mafia/avatars/fox.svg",
+    "bytes": 425,
+    "sha256": "a82724bc63d48f9ff1210ced1701bacc7009f35f65b566bbe4f2c99f6bedbb52"
+  },
+  {
+    "path": "mobile/bundle/mafia/avatars/frog.svg",
+    "bytes": 435,
+    "sha256": "f90e6cf726f83f5eb464acebe8c01eb7a10aa2a58b9d48423d07da346b8045b4"
+  },
+  {
+    "path": "mobile/bundle/mafia/avatars/moon.svg",
+    "bytes": 386,
+    "sha256": "8923608f46304983da59b001f7a068d7003bc24616e4d948c86877a8852da40b"
+  },
+  {
+    "path": "mobile/bundle/mafia/avatars/owl.svg",
+    "bytes": 435,
+    "sha256": "5b4f7952af9d45b35a9998e6d44d7a6d56389d0df466fa48f61a8549dc01c3e4"
+  },
+  {
+    "path": "mobile/bundle/mafia/avatars/rabbit.svg",
+    "bytes": 455,
+    "sha256": "488e8ee936a819d28fca6c8e849dcf3030a0e42f5bb81b578d1999e7cd0c948c"
+  },
+  {
+    "path": "mobile/bundle/mafia/avatars/raven.svg",
+    "bytes": 435,
+    "sha256": "e6e557589ecdfb6da94d39c9ba504ceef49ceb0bfc411b725152052d8239007f"
+  },
+  {
+    "path": "mobile/ios/Playlo/AppDelegate.swift",
+    "bytes": 49508,
+    "sha256": "95b865e32a092214bf2ec8382cd0b0b4c727ed7f7e43cd9d3f880b06ac2a1191"
+  },
+  {
+    "path": "mobile/ios/Playlo/Info.plist",
+    "bytes": 1780,
+    "sha256": "bb9c1017a041cac094feda827b140d9f8cad6d2a385d3419ff33945f90ae71bc"
+  },
+  {
+    "path": "mobile/ios/Playlo.xcodeproj/project.pbxproj",
+    "bytes": 4576,
+    "sha256": "02eff742984762df36b776b3ff20927c9548405487931c883648a1ab3fc7dff6"
+  },
+  {
+    "path": "mobile/ios/Playlo/Assets.xcassets/Contents.json",
+    "bytes": 43,
+    "sha256": "e8e8ef4b27126d62305af321d12a6e64b866ca0b160f0f83efae90111f0ee576"
+  },
+  {
+    "path": "mobile/ios/Playlo/Assets.xcassets/AppIcon.appiconset/Contents.json",
+    "bytes": 219,
+    "sha256": "324f2cbb43d2b83d2e6cce5335ed0530e42c2ac6efc8ac13511a5ab78148e8ed"
+  },
+  {
+    "path": "mobile/ios/Playlo/Assets.xcassets/AppIcon.appiconset/Playlo-1024.png",
+    "bytes": 14960,
+    "sha256": "c374fb46835e84bf5987c3b0bab3a32653b5eb266ad39801abd4586e65514835"
+  },
+  {
+    "path": "mobile/ios/Playlo.xcodeproj/xcshareddata/xcschemes/Playlo.xcscheme",
+    "bytes": 1289,
+    "sha256": "1c78e7e5c154cdac8c87e37c07e3845b1e14437c1bb4bb340697e37b8df808af"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "origin": "https://playlo-social-games.fernandofrederiksen2.chatgpt.site",
+  "version": "1.15.0",
+  "build": 17,
+  "destinations": [
+    {
+      "title": "Spellen",
+      "description": "Ontdek de 34 spellen en speel samen.",
+      "path": "/?collection=all&network=online"
+    },
+    {
+      "title": "Studio",
+      "description": "Maak, test en bewaar je eigen spel.",
+      "path": "/?studio=code&network=online"
+    },
+    {
+      "title": "Offline spelen",
+      "description": "Speel lokaal zonder verbinding. Je online profiel blijft apart.",
+      "path": "/?collection=all&network=offline"
+    }
+  ],
+  "mode": "bundled"
+}

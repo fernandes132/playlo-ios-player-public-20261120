@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/
+Sitemap: https://playlo-social-games.fernandofrederiksen2.chatgpt.site/sitemap.xml
