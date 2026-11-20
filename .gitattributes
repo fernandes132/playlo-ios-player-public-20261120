@@ -1,0 +1,6 @@
+mobile/bundle/** -text
+mobile/shared/** -text
+*.sh text eol=lf
+*.py text eol=lf
+*.swift text eol=lf
+*.yml text eol=lf

@@ -38,4 +38,3 @@ jobs:
       TAG="native-v1.15.0-${GITHUB_RUN_ID}"
       gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --draft --title "Playlo 1.15.0 native iPhone build" --notes "Unsigned IPA for iLoader. No website deployment."
       gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" mobile/ios/.build/Playlo-unsigned.ipa mobile/ios/.build/Playlo-unsigned.ipa.validation.json mobile/ios/.build/Playlo-embedded-bundle.json mobile/ios/.build/Playlo-native-smoke.json mobile/ios/.build/Playlo-native-youtube.json mobile/ios/.build/Playlo-native-youtube.png
-

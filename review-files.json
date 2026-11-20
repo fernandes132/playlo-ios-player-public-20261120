@@ -1,13 +1,13 @@
 [
   {
-    "path": "README.md",
-    "bytes": 1101,
-    "sha256": "f73ba7e22c54e20158b6aad899146831f841bcf0771b4224d6c01c47366c3c52"
+    "path": ".gitattributes",
+    "bytes": 124,
+    "sha256": "9b8c37757f3a68c1a5cc10d65874398401ba561f6afaf9544226338a7464bca0"
   },
   {
-    "path": "review-files.json",
-    "bytes": 32351,
-    "sha256": "2e3f69155e5403b7e9ff407ced3a1f7a85ba37f964aa1a0751458b29d5a844ca"
+    "path": "README.md",
+    "bytes": 1056,
+    "sha256": "6d172c1a7c6990f7f972cde5e740a7b9056286764f43378cc8f330c93d5d2eda"
   },
   {
     "path": "mobile/prepare_shared.py",
@@ -21,8 +21,8 @@
   },
   {
     "path": ".github/workflows/playlo-ios.yml",
-    "bytes": 1925,
-    "sha256": "ffbddd772121fef15db0e5344397aac6da257ace30047d259823c1dc5289c111"
+    "bytes": 2014,
+    "sha256": "49910391b243967fe9b9b8bc6dda2e407c95a2df5724b8a420d30918d28b1b91"
   },
   {
     "path": "mobile/bundle/app-online.json",
