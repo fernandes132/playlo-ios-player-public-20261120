@@ -911,8 +911,8 @@
   },
   {
     "path": "mobile/ios/Playlo/AppDelegate.swift",
-    "bytes": 49508,
-    "sha256": "95b865e32a092214bf2ec8382cd0b0b4c727ed7f7e43cd9d3f880b06ac2a1191"
+    "bytes": 50461,
+    "sha256": "156623166e25c01fc49346645d645e8af6a08997c3beeea46fccb611df492329"
   },
   {
     "path": "mobile/ios/Playlo/Info.plist",

@@ -301,6 +301,15 @@ final class PlayloScreen: UIViewController, WKNavigationDelegate, WKUIDelegate, 
             for(const name of ['Lava Run','Castle Siege','Balloon Battle','Floor Drop','Crown Thief','Laser Escape','Traffic Panic','Falling Stuff','Grab and Run','King of the Hill','Delivery Disaster']){
               await wait(()=>pendingAPI===0);const card=await wait(()=>[...document.querySelectorAll('.catalogGrid article')].find(a=>a.querySelector('h2')?.textContent.trim()===name));card.querySelector('button').click();
               (await wait(()=>document.querySelector('.playModeCards>button'))).click();
+              if(name==='Traffic Panic'){
+                (await wait(()=>button('Begin met oversteken'))).click();
+                const canvas=await wait(()=>{const c=document.querySelector('.trafficCanvas');return c&&Number(c.dataset.tick)>20?c:null});
+                (await wait(()=>document.querySelector('.trafficControls button:not([disabled])'))).click();
+                const webgl=!!canvas.getContext('webgl2');if(!webgl)throw Error(name+': no WebGL2 renderer');
+                for(const control of document.querySelectorAll('.trafficControls button')){const r=control.getBoundingClientRect();if(r.y<0||r.bottom>innerHeight+1||r.height<44)throw Error('Traffic control outside viewport')}
+                graphics.push({name,webgl2:webgl,ticks:Number(canvas.dataset.tick)});
+                document.querySelector('.trafficRun>header>button').click();await wait(()=>document.querySelector('.catalogGrid'));continue;
+              }
               (await wait(()=>document.querySelector('.actionSetup>button:not([disabled])'))).click();
               const canvas=await wait(()=>{const c=document.querySelector('.actionCampaign[data-stage=play] .action3DWorld canvas');return c&&c.dataset.tick!==undefined?c:null});
               (await wait(()=>document.querySelector('.tacticalDirections button:not([disabled]),.actionControl-special:not([disabled])'))).click();
