@@ -30,7 +30,7 @@ for _ in $(seq 1 150); do
 done
 cp "$CONTAINER/Documents/Playlo-native-smoke.json" .build/Playlo-native-smoke.json
 cat .build/Playlo-native-smoke.json
-python3 -c 'import json;d=json.load(open(".build/Playlo-native-smoke.json"));assert d["status"]=="PASS" and d["isSecureContext"] and d["games"]==34 and len(d["graphics"])==29 and all(g["webgl2"] and g["ticks"]>0 for g in d["graphics"]),d'
+python3 -c 'import json;d=json.load(open(".build/Playlo-native-smoke.json"));assert d["status"]=="PASS" and d["isSecureContext"] and d["games"]==34 and len(d["graphics"])==29 and all(g["webgl2"] and g["ticks"]>0 for g in d["graphics"]) and d["hitQuiz"]["questions"]==8 and d["hitQuiz"]["minimumControlSize"] and d["hitQuiz"]["pauseResume"] and d["hitQuiz"]["skipScore"]==0,d'
 xcrun simctl io "$DEVICE" screenshot .build/Playlo-simulator.png
 
 # Verify the actual isolated YouTube controller and app identity in WKWebView.

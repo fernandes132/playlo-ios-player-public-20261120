@@ -9,4 +9,4 @@ The workflow uses only standard public macOS runners, no paid or larger runners,
 https://docs.github.com/en/actions/concepts/billing-and-usage
 https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases
 
-This is a genuine native rebuild, not a resource patch of an older IPA. Native YouTube view code is new and still requires Xcode compilation and runtime verification.
+This is a genuine native rebuild, not a resource patch of an older IPA. The shared bundle now also includes Hitkenner and the revised licensed-audio listening rounds. Native compilation and simulator checks run before the draft IPA is delivered.
