@@ -21,8 +21,8 @@
   },
   {
     "path": ".github/workflows/playlo-ios.yml",
-    "bytes": 2014,
-    "sha256": "49910391b243967fe9b9b8bc6dda2e407c95a2df5724b8a420d30918d28b1b91"
+    "bytes": 2186,
+    "sha256": "b1db1d61913a4632c2f99262eba1028a2e8bcecfb787417c486d873603d0f64b"
   },
   {
     "path": "mobile/bundle/app-online.json",

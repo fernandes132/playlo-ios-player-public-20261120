@@ -10,6 +10,7 @@ on:
 permissions: { contents: write }
 jobs:
  build:
+  if: ${{ github.event.repository.private == false }}
   runs-on: ${{ inputs.runner || 'macos-26' }}
   timeout-minutes: 20
   steps:
@@ -35,6 +36,7 @@ jobs:
      env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
      run: |
-      TAG="native-v1.15.0-${GITHUB_RUN_ID}"
-      gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --draft --title "Playlo 1.15.0 native iPhone build" --notes "Unsigned IPA for iLoader. No website deployment."
+      VERSION=$(python3 -c 'import json;print(json.load(open("mobile/shared/app-shell.json"))["version"])')
+      TAG="native-v${VERSION}-${GITHUB_RUN_ID}"
+      gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --draft --title "Playlo ${VERSION} native iPhone build" --notes "Unsigned IPA for iLoader. No website deployment."
       gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" mobile/ios/.build/Playlo-unsigned.ipa mobile/ios/.build/Playlo-unsigned.ipa.validation.json mobile/ios/.build/Playlo-embedded-bundle.json mobile/ios/.build/Playlo-native-smoke.json mobile/ios/.build/Playlo-native-youtube.json mobile/ios/.build/Playlo-native-youtube.png
