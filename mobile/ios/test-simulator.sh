@@ -2,10 +2,43 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 xcodebuild -project Playlo.xcodeproj -scheme Playlo -configuration Debug -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' -derivedDataPath SimulatorData CODE_SIGNING_ALLOWED=YES CODE_SIGN_IDENTITY=- build
-DEVICE=$(xcrun simctl list devices available --json | python3 -c 'import json,sys,re;d=json.load(sys.stdin);c=[(tuple(map(int,re.findall(r"[0-9]+",key))),x["udid"]) for key,items in d["devices"].items() if "iOS" in key for x in items if x["name"].startswith("iPhone")];assert c,"No available iPhone simulator";print(max(c)[1])')
-xcrun simctl boot "$DEVICE"
-trap 'xcrun simctl shutdown "$DEVICE" || true' EXIT
-xcrun simctl bootstatus "$DEVICE" -b
+# Use a disposable device: hosted images can contain partly migrated simulators.
+# bootstatus may return zero even after reporting Data Migration Failed.
+DEVICE=$(python3 - <<'PYBOOT'
+import json,re,subprocess,sys,uuid
+
+def sim(*args,**kwargs):
+ return subprocess.run(['xcrun','simctl',*args],text=True,capture_output=True,**kwargs)
+
+def listing(kind):
+ return json.loads(sim('list',kind,'--json',check=True).stdout)[kind]
+
+runtimes=[r for r in listing('runtimes') if r.get('isAvailable') and 'iOS' in r['name']]
+assert runtimes,'No available iOS runtime'
+runtimes.sort(key=lambda r:tuple(map(int,re.findall(r'[0-9]+',r['version']))),reverse=True)
+types=[t for t in listing('devicetypes') if t['name'].startswith('iPhone')]
+assert types,'No iPhone device type'
+device_type=next((t for t in types if t['name']=='iPhone 17 Pro'),types[-1])
+for attempt in range(2):
+ runtime=runtimes[min(attempt,len(runtimes)-1)]
+ device=sim('create','Playlo-QA-'+uuid.uuid4().hex[:8],device_type['identifier'],runtime['identifier'],check=True).stdout.strip()
+ try:
+  sim('boot',device,check=True)
+  ready=sim('bootstatus',device,'-b',timeout=180)
+  log=ready.stdout+'\n'+ready.stderr
+  print(log,file=sys.stderr,flush=True)
+  if ready.returncode or re.search(r'failed|failure',log,re.I):
+   raise RuntimeError('Simulator did not finish migration successfully')
+  print(device)
+  break
+ except (RuntimeError,subprocess.SubprocessError) as error:
+  print('Disposable simulator start failed: '+str(error),file=sys.stderr,flush=True)
+  sim('shutdown',device)
+  sim('delete',device)
+  if attempt==1:raise
+PYBOOT
+)
+trap 'xcrun simctl shutdown "$DEVICE" || true; xcrun simctl delete "$DEVICE" || true' EXIT
 xcrun simctl install "$DEVICE" SimulatorData/Build/Products/Debug-iphonesimulator/Playlo.app
 mkdir -p .build
 xcrun simctl launch --console "$DEVICE" nl.playlo.app --playlo-offline-smoke > .build/Playlo-launch.log 2>&1 &
@@ -22,7 +55,7 @@ diagnostics() {
  find "$HOME/Library/Logs/DiagnosticReports" -maxdepth 1 -name 'Playlo*' -type f -exec cp {} .build/Playlo-crashes/ \; 2>/dev/null || true
  kill "$LAUNCH_PID" 2>/dev/null || true
 }
-trap 'diagnostics; xcrun simctl shutdown "$DEVICE" || true' EXIT
+trap 'diagnostics; xcrun simctl shutdown "$DEVICE" || true; xcrun simctl delete "$DEVICE" || true' EXIT
 for _ in $(seq 1 150); do
  if [ -f "$CONTAINER/Documents/Playlo-native-smoke.json" ]; then break; fi
  if ! kill -0 "$LAUNCH_PID" 2>/dev/null; then echo 'Native simulator process ended before reporting'; break; fi

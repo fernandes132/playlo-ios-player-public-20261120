@@ -116,8 +116,8 @@
   },
   {
     "path": "mobile/ios/test-simulator.sh",
-    "bytes": 3424,
-    "sha256": "89453504d547096bd10f166b38a53b1ebb518779a9a0336ab7d450915ac122da"
+    "bytes": 4780,
+    "sha256": "b04536290842c21e4c443d8c7bcb6115b4a99ed4006179b288bbbbfd7ca591b6"
   },
   {
     "path": "mobile/ios/test_validate_ipa.py",
