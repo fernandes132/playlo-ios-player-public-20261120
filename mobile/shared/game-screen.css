@@ -278,3 +278,5 @@ body:has(.escapePuzzleWorkspace) .languageCurrent{min-height:44px;height:44px;pa
 }
 html[data-playlo-focus=true],html[data-playlo-focus=true] body{overflow:hidden!important}
 .playloFocusScreen.playloFocusScreen{position:fixed!important;inset:0!important;z-index:100!important;width:100%!important;max-width:none!important;height:var(--playlo-visible-height,100dvh)!important;min-height:0!important;margin:0!important;overflow:auto!important;background:#10182b;padding-top:env(safe-area-inset-top)!important;padding-bottom:env(safe-area-inset-bottom)!important}
+
+.playloFocusScreen.playloFocusScreen{box-sizing:border-box!important;overscroll-behavior:contain}.playloFocusScreen>.gameDisplayControl{position:sticky;top:0;z-index:105}.playloFocusScreen .gameDisplayControl{z-index:105}.gameDisplayMessage{max-width:420px;inset:auto 12px 12px auto}.hubTop .gameDisplayControl{flex-shrink:0}@media(max-width:560px){.hubTop:has(.gameDisplayControl){height:auto;min-height:64px;flex-wrap:wrap;gap:8px;padding:10px 12px}.hubTop:has(.gameDisplayControl)>.wordmark{margin-right:auto}.gameDisplayMessage{font-size:14px;max-width:calc(100vw - 24px)}}
