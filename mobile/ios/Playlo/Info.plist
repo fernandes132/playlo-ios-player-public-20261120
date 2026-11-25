@@ -6,8 +6,8 @@
  <key>CFBundleIdentifier</key><string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
  <key>CFBundleName</key><string>Playlo</string>
  <key>CFBundlePackageType</key><string>APPL</string>
- <key>CFBundleShortVersionString</key><string>1.18.0</string>
- <key>CFBundleVersion</key><string>20</string>
+ <key>CFBundleShortVersionString</key><string>1.19.0</string>
+ <key>CFBundleVersion</key><string>21</string>
  <key>NSMicrophoneUsageDescription</key><string>Toon alleen op jouw verzoek een lokale microfoonvolumemeter bij karaoke. Er wordt niets opgenomen of verstuurd.</string>
  <key>NSCameraUsageDescription</key><string>Maak een profielfoto wanneer je daar zelf voor kiest.</string>
  <key>CFBundleURLTypes</key><array><dict><key>CFBundleURLName</key><string>nl.playlo.resume</string><key>CFBundleURLSchemes</key><array><string>playlo-native</string></array></dict></array>
